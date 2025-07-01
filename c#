@@ -1,0 +1,38 @@
+using Exiled.API.Features;
+using Exiled.Events.EventArgs.Player;
+using Player = Exiled.API.Features.Player;
+
+namespace CaptainOrders
+{
+    public class Plugin : Plugin<Config>
+    {
+        public override string Name => "CaptainOrders";
+        public override string Author => "TonPseudo";
+        public override string Prefix => "captainorders";
+        public override Version Version => new Version(1, 0, 0);
+        public override Version RequiredExiledVersion => new Version(8, 6, 0); // adapte à ta version
+
+        public override void OnEnabled()
+        {
+            Exiled.Events.Handlers.Player.Spawned += OnSpawned;
+            base.OnEnabled();
+        }
+
+        public override void OnDisabled()
+        {
+            Exiled.Events.Handlers.Player.Spawned -= OnSpawned;
+            base.OnDisabled();
+        }
+
+        private void OnSpawned(SpawnedEventArgs ev)
+        {
+            Player player = ev.Player;
+
+            if (player.Role.Type == RoleTypeId.ClassD || player.Role.Type == RoleTypeId.Scientist || player.Role.Type == RoleTypeId.FacilityGuard)
+            {
+                string orders = Config.OrdersMessage;
+                player.Broadcast(10, orders); // Affiche les ordres pendant 10 secondes
+            }
+        }
+    }
+}
