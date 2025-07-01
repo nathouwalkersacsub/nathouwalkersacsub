@@ -5,6 +5,6 @@ namespace CaptainOrders
     public class Config : IConfig
     {
         public bool IsEnabled { get; set; } = true;
-        public string OrdersMessage { get; set; } = "⚠️ ORDRE DU CAPITAINE : Coopérez avec le MTF. Évitez les SCP. Sécurisez les scientifiques.";
+        public string OrdersMessage { get; set; } = "⚠️ ORDRE DU CAPITAINE : Coopérez avec le MTF. Évitez les SCP. Sécurisez les scientifiques le nombre d'entités scp vous sera communiqué a vos supérieurs .";
     }
 }
