@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeHub C / C++ / C#</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1e1e2f;
+      color: #f0f0f0;
+    }
+    header {
+      background-color: #2f2f44;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #61dafb;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .btn-discord {
+      background-color: #7289da;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1rem;
+    }
+    .resources ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .resources li {
+      margin-bottom: 10px;
+    }
+    .resources a {
+      color: #00e0ff;
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #2f2f44;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CodeHub : C / C++ / C#</h1>
+    <nav>
+      <a href="#about">À propos</a>
+      <a href="#resources">Ressources</a>
+      <a href="#join">Rejoindre</a>
+    </nav>
+  </header>  <section id="about">
+    <h2>À propos</h2>
+    <p>Bienvenue sur CodeHub, une communauté francophone dédiée à l'apprentissage et l'entraide autour des langages de programmation C, C++ et C#. Que tu sois débutant ou confirmé, notre serveur Discord t'accueille pour progresser, poser des questions et collaborer sur des projets passionnants.</p>
+  </section>  <section id="resources" class="resources">
+    <h2>Ressources gratuites pour apprendre</h2>
+    <ul>
+      <li><strong>C :</strong> <a href="https://openclassrooms.com/fr/courses/19980-apprenez-a-programmer-en-c" target="_blank">Cours OpenClassrooms - Apprendre le C</a></li>
+      <li><strong>C++ :</strong> <a href="https://www.learncpp.com/" target="_blank">LearnCpp.com (en anglais)</a></li>
+      <li><strong>C# :</strong> <a href="https://docs.microsoft.com/fr-fr/dotnet/csharp/tour-of-csharp/" target="_blank">Tour de C# par Microsoft</a></li>
+      <li><strong>Défis de code :</strong> <a href="https://www.codingame.com" target="_blank">CodinGame</a></li>
+      <li><strong>Entraide générale :</strong> <a href="https://stackoverflow.com" target="_blank">StackOverflow</a></li>
+    </ul>
+  </section>  <section id="join">
+    <h2>Rejoindre notre communauté</h2>
+    <p>Notre serveur Discord est l’endroit parfait pour poser tes questions, partager ton code, participer à des concours et rencontrer d’autres passionnés !</p>
+    <a class="btn-discord" href="https://discord.com/invite/4ZRh4UCgEg" target="_blank">🎮 Rejoindre notre Discord</a>
+  </section>  <footer>
+    &copy; 2025 CodeHub - Tous droits réservés
+  </footer>
+</body>
+</html>
